@@ -1,0 +1,22 @@
+node_modules
+dist
+.next
+.DS_Store
+*.local
+
+# tooling
+.atl
+.neon
+.env
+.vercel
+.env*
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# WSL
+*:Zone.Identifier

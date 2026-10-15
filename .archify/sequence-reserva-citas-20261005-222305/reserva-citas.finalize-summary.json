@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "skipped",
+  "type": "sequence",
+  "quality": "showcase",
+  "specification": {
+    "path": "/home/marioyahuar/mimo-pet-spa-landing/.archify/sequence-reserva-citas-20261005-222305/candidate.json",
+    "sha256": "89e46c0497b39475f7b958d5b207700ac3ad7aaec036f9dffc6419640a26c3a8",
+    "bytes": 33172
+  },
+  "artifact": {
+    "path": "/home/marioyahuar/mimo-pet-spa-landing/.archify/sequence-reserva-citas-20261005-222305/reserva-citas.html",
+    "sha256": "7cdac1aaf54a9a1330ee3e390825730093f2b4d6fd92bcfe747b3d0acbff3119",
+    "bytes": 765489
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "skipped"
+  },
+  "failedStage": "browser-check",
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "/home/marioyahuar/mimo-pet-spa-landing/.archify/sequence-reserva-citas-20261005-222305/reserva-citas.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun browser-check"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/home/marioyahuar/mimo-pet-spa-landing/.archify/sequence-reserva-citas-20261005-222305/reserva-citas.finalize.json",
+    "summaryReceipt": "/home/marioyahuar/mimo-pet-spa-landing/.archify/sequence-reserva-citas-20261005-222305/reserva-citas.finalize-summary.json",
+    "browserCheckReceipt": "/home/marioyahuar/mimo-pet-spa-landing/.archify/sequence-reserva-citas-20261005-222305/reserva-citas.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.0.1",
+    "availableVersion": "3.0.1",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-06T03:23:05.709Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 806
+}

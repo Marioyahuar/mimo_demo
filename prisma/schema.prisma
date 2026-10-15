@@ -1,0 +1,31 @@
+// Prisma 7.10.0 (estable). Verificado: el driver adapter (@prisma/adapter-neon) es estable,
+// NO requiere el preview feature `driverAdapters`. En Prisma 7 la URL del datasource vive en
+// prisma.config.ts (no en este archivo) y el PrismaClient exige un adapter en el constructor.
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Reservation {
+  id                String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  serviceTitle      String   @map("service_title")
+  servicePriceLabel String   @map("service_price_label")
+  extras            String[]
+  petName           String   @map("pet_name")
+  petBreed          String   @map("pet_breed")
+  petSize           String   @map("pet_size")
+  petNotes          String?  @map("pet_notes")
+  date              DateTime @db.Date
+  time              String
+  contactName       String   @map("contact_name")
+  contactPhone      String   @map("contact_phone")
+  contactEmail      String   @map("contact_email")
+  createdAt         DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  idempotencyKey    String   @unique @map("idempotency_key") @db.Uuid
+
+  @@unique([date, time])
+  @@map("reservations")
+}
