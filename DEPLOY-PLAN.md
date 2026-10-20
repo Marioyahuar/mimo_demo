@@ -144,3 +144,12 @@ migraciones, cambios en Neon) requiere nueva autorización.
 - 2026-10-20 — `ADMIN_PASSWORD` aleatorio añadido a Vercel Production; copia local en
   `.env.admin-production` (ignorado por git).
 
+- 2026-10-20 — Commit `c235a87` empujado a `main`: run 39350516934 verde (quality, e2e, deploy por
+  hook, smoke). El paso de `npm audit` falla pero es informativo (`continue-on-error`).
+- 2026-10-20 — Verificación en https://mimo-demo-five.vercel.app: `/` 200, `/reservar` 200,
+  `/admin` sin sesión 307, API admin sin sesión 401, login con clave errónea 401, login con la
+  clave nueva 200, `/admin` y `/api/admin/reservations` con sesión 200, disponibilidad 200 (lee la
+  DB de producción). No se creó una reserva real en producción; el flujo de reserva completo lo
+  cubren los 13 E2E sobre la branch Neon de desarrollo.
+- Recovery disponible: `vercel rollback` (lo ejecuta el dueño); para revocar el hook:
+  `vercel deploy-hooks remove ci-gate --yes` y rotar el secret.
