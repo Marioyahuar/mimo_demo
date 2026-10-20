@@ -1,0 +1,8 @@
+.codegraph
+.git
+node_modules
+.next
+.env*
+.claude
+.agents
+.archify
