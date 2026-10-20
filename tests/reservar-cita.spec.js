@@ -52,6 +52,6 @@ test('el cliente reserva una cita de punta a punta', async ({ page }) => {
   await page.getByRole('button', { name: /Confirmar reserva/ }).click();
 
   // 6. Confirmación
-  await expect(page.getByRole('heading', { name: '¡Cita reservada!' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'ROMPER A PROPÓSITO' })).toBeVisible();
   await expect(page.getByText(`Peluquería canina para ${petName} (Caniche, Pequeño)`)).toBeVisible();
 });
