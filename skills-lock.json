@@ -7,6 +7,12 @@
       "skillPath": "skills/caveman/SKILL.md",
       "computedHash": "43ab924e4422a09c24d16dc81349771513bc801c1be21077c252952fe753e6b6"
     },
+    "deploy-pass": {
+      "source": "adminoryslabs/Armory",
+      "sourceType": "github",
+      "skillPath": "skills/deploy-pass/SKILL.md",
+      "computedHash": "559b6d2181930bce364d47a792e757c708f0f38268104b479560856f78c13e35"
+    },
     "generar-backlog": {
       "source": "adminoryslabs/Armory",
       "sourceType": "github",

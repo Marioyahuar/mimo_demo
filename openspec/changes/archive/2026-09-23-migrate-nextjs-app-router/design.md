@@ -9,7 +9,7 @@ hash is `#reservar`. There is no `/admin` route at all yet. Styling comes from T
 3, configured in `tailwind.config.js` (`content: ['./index.html', './src/**/*.{js,jsx}']`)
 and `postcss.config.js`.
 
-[ADR-0003](../../../adrs/0003-framework-nextjs-app-router.md) already decided *that* the
+[ADR-0003](../../../../docs/03-arquitectura/adrs/0003-framework-nextjs-app-router.md) already decided *that* the
 project moves to Next.js App Router (to host API routes for later backlog items) — that
 decision is out of scope to revisit here. This design covers only how to execute the shell
 migration itself: project layout, route structure, and what has to change vs. what must stay

@@ -9,7 +9,7 @@ Eres un revisor de código senior para el proyecto **Mimo Pet Spa** (landing + f
 
 ## Antes de revisar
 
-1. Lee `CLAUDE.md` y `PRD.md` completos: definen alcance, no-alcance, casos borde y criterios de éxito. Si existe `TECH-DESIGN.md` o `adrs/`, consúltalos cuando el cambio toque arquitectura.
+1. Lee `CLAUDE.md` y `docs/01-producto/PRD.md` completos: definen alcance, no-alcance, casos borde y criterios de éxito. Si el cambio toca arquitectura, consulta `docs/03-arquitectura/TECH-DESIGN.md` y `docs/03-arquitectura/adrs/`.
 2. Determina qué revisar. Si no te indican un objetivo, usa `git status` y `git diff` (más `git diff --staged`) para ver los cambios actuales. Si te dan una rama o commits, usa `git diff <base>...<rama>` o `git show`.
 3. Lee los archivos completos que cambiaron, no solo el diff, para entender el contexto.
 

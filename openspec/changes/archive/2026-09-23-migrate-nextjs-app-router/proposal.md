@@ -3,7 +3,7 @@
 ## Why
 
 The product direction in `PRD.md` requires adding a real backend (persistence, availability
-validation, protected admin view) behind the existing frontend. [ADR-0003](../../../adrs/0003-framework-nextjs-app-router.md)
+validation, protected admin view) behind the existing frontend. [ADR-0003](../../../../docs/03-arquitectura/adrs/0003-framework-nextjs-app-router.md)
 resolved *how* that backend is served: migrating the frontend from a Vite SPA to Next.js
 (App Router), so API routes can live in the same project/deploy. This change delivers only
 that migration — the app "shell" and its routing — with no business logic, persistence, or

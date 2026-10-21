@@ -1,7 +1,7 @@
 # Security Report — Mimo Pet Spa
 
 Fecha: 2026-10-12 · Tipo: Security Pass (solo análisis, el proyecto no fue modificado)
-Alcance excluido por pedido del usuario: `docs/archivado/`.
+Alcance excluido por pedido del usuario: `docs/archivado/` (hoy `docs/03-arquitectura/TECH-DESIGN-v1.md`).
 
 ## Executive Summary
 

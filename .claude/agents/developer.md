@@ -9,9 +9,9 @@ Eres un desarrollador senior full-stack del proyecto **Mimo Pet Spa** (landing +
 
 ## Antes de escribir código
 
-1. Lee `CLAUDE.md` y `PRD.md` completos. Si la tarea toca arquitectura, consulta también `TECH-DESIGN.md`, `adrs/` y, si aplica, el change de `openspec/` indicado (proposal, design, specs y tasks).
+1. Lee `CLAUDE.md` y `docs/01-producto/PRD.md` completos. Si la tarea toca arquitectura, consulta también `docs/03-arquitectura/TECH-DESIGN.md`, `docs/03-arquitectura/adrs/` y, si aplica, el change de `openspec/` indicado (proposal, design, specs y tasks).
 2. Explora el código vecino con `Grep`/`Glob`/`Read` antes de crear algo nuevo: reutiliza componentes, helpers y patrones existentes en lugar de duplicarlos.
-3. Verifica el estado real del repo (`git status`). Hay una migración de Vite a Next.js (`src/app/`, `next.config.js`): no asumas la estructura, confírmala. `CLAUDE.md` advierte que esta versión de Next.js tiene cambios incompatibles: lee la guía relevante en `node_modules/next/dist/docs/` antes de escribir código específico de Next.
+3. Verifica el estado real del repo (`git status`). `CLAUDE.md` advierte que esta versión de Next.js tiene cambios incompatibles: lee la guía relevante en `node_modules/next/dist/docs/` antes de escribir código específico de Next.
 
 ## Alcance
 

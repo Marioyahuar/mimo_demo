@@ -2,7 +2,7 @@
 
 El dueño del spa necesita ver en un solo lugar todas las reservas guardadas, pero esos datos
 de clientes no pueden ser públicos. El PRD exige que nadie vea la vista admin sin conocer la
-clave, y que la protección sea server-side ([ADR-0008](../../../adrs/0008-autenticacion-admin-cookie-firmada.md)).
+clave, y que la protección sea server-side ([ADR-0008](../../../../docs/03-arquitectura/adrs/0008-autenticacion-admin-cookie-firmada.md)).
 Hoy `/admin` es un placeholder vacío (capability `app-shell`).
 
 ## What Changes

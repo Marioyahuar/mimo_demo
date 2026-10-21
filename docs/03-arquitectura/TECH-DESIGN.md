@@ -1,6 +1,6 @@
 # Technical Design Document v2: Sistema de reservas — Mimo Pet Spa
 
-**Versión:** 2 — reemplaza funcionalmente a [`TECH-DESIGN.md`](TECH-DESIGN.md) (v1), que se
+**Versión:** 2 — reemplaza funcionalmente a [`TECH-DESIGN-v1.md`](TECH-DESIGN-v1.md) (v1), que se
 conserva sin modificar para trazabilidad. Los ADRs 0001–0009 también se conservan tal cual;
 esta versión los complementa con dos ADRs nuevos en vez de editarlos.
 

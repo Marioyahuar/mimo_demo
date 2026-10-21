@@ -1,8 +1,11 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(vercel env add:*)"
-    ],
-    "deny": []
+    "allow": [],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.e2e)",
+      "Read(./admin-credentials.local)"
+    ]
   }
 }
